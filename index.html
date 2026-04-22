@@ -131,6 +131,26 @@
 </footer>
 
 <script src="script.js"></script>
+<button id="backToTop">↑</button>
+    <script>
+const btn = document.getElementById("backToTop");
 
+// hiện nút khi cuộn xuống
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+// bấm để quay lên đầu
+btn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+</script>
 </body>
 </html>
