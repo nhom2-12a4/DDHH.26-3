@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>DDHH 26/3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+    <div class="logo">
+        <img src="images/LOGO.jpg" alt="logo">
+        DDHH 26/3
+    </div>
+    <div>
+        <a href="#intro">Giới thiệu</a>
+        <a href="#history">Lịch sử</a>
+        <a href="#activities">Hoạt động</a>
+        <a href="#gallery">Hình ảnh</a>
+        <a href="#video">Video</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-box">
+        <h1>26 / 3 của 12A4</h1>
+        <p>Thanh xuân cháy hết mình của lớp chúng tôi</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section id="intro" class="section reveal">
+    <h2>📖 Giới thiệu</h2>
+    <p>
+        Ngày 26/3 là ngày thành lập Đoàn TNCS Hồ Chí Minh.
+        Đây là dịp để thanh niên thể hiện tinh thần đoàn kết,
+        sáng tạo và tham gia nhiều hoạt động ý nghĩa.
+    </p>
+</section>
+
+<!-- HISTORY -->
+<section id="history" class="section reveal">
+    <h2>🧠 Lịch sử</h2>
+    <div class="timeline">
+        <div class="item">1931 - Thành lập Đoàn</div>
+        <div class="item">1945 - Cách mạng tháng 8</div>
+        <div class="item">1975 - Giải phóng đất nước</div>
+        <div class="item">Hiện nay - Hội nhập & phát triển</div>
+    </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="section reveal">
+    <h2>🔥 Hoạt động</h2>
+    <div class="cards">
+        <div class="card">🎤 Văn nghệ</div>
+        <div class="card">⚽ Thể thao</div>
+        <div class="card">🎮 Trò chơi</div>
+        <div class="card">🤝 Team building</div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery reveal">
+
+    <div class="gallery-item">
+        <img src="images/img1.jfif">
+        <span>📸</span>
+        <div class="overlay">
+            <h3>Hoạt động lớp</h3>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/img2.jfif">
+        <span>🔥</span>
+        <div class="overlay">
+            <h3>Vui chơi</h3>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/img32.jpg">
+        <span>🎉</span>
+        <div class="overlay">
+            <h3>Kỷ niệm</h3>
+        </div>
+    </div>
+</section>
+<div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+<!-- VIDEO -->
+<section id="video" class="video reveal">
+
+    <div class="video-box">
+        <video id="myVideo" preload="metadata">
+            <source src="images/vid1.mp4" type="video/mp4">
+            Trình duyệt không hỗ trợ video.
+        </video>
+
+        <!-- nút play giữa -->
+        <div class="play-btn" id="playBtn">▶</div>
+
+        <!-- controls -->
+        <div class="controls">
+            <input type="range" id="progress" value="0" min="0" max="100">
+
+            <div class="control-row">
+                <button id="playPause">⏯</button>
+
+                <!-- volume -->
+                <input type="range" id="volume" min="0" max="1" step="0.05" value="1">
+
+                <button id="fullscreen">⛶</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- LIGHTBOX VIDEO -->
+<div id="video-lightbox">
+    <video id="video-full" controls></video>
+</div>
+<!-- FOOTER -->
+<footer>
+    <h3>🔥 DDHH - 26/3 🔥</h3>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
