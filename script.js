@@ -57,8 +57,6 @@ window.addEventListener("load", () => {
     const volume = document.getElementById("volume");
     const playPause = document.getElementById("playPause");
     const fullscreen = document.getElementById("fullscreen");
-
-    const videoLightbox = document.getElementById("video-lightbox");
     const videoFull = document.getElementById("video-full");
 
     if(video && btn){
