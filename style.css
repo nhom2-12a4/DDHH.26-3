@@ -368,7 +368,7 @@ body::after{
 }
 
 .video-box video{
-    width: 400px;
+    width: 500px;
     max-width: 90%;
     display: block;      /* 🔥 quan trọng */
     border-radius: 15px;
